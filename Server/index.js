@@ -30,7 +30,7 @@ app.use("/transaction", transactionsRoutes);
 
 
 
-
+const MONGOS_URL="mongodb+srv://ankit1602121007:yCe1Z3uo6vNgynGD@cluster0.f71lwn2.mongodb.net/finance"
 
 
 /* MONGOOSE  SETUP */
@@ -39,7 +39,7 @@ const PORT = process.env.PORT || 8000;
 
 
 
-mongoose.connect(process.env.MONGOS_URL,{
+mongoose.connect(MONGOS_URL,{
     useNewUrlParser:true,
     useUnifiedTopology:true,
 
